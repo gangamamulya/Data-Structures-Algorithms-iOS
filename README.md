@@ -103,52 +103,55 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
       ```swift
            numbers.reverse() // [7, 6, 5, 4, 3, 2, 1]
 8. Checking Array Properties
-  * isEmpty
-    ```swift
+    * isEmpty
+      ```swift
         let numbers = [Int]()
         numbers.isEmpty // true
     
-  * count
-    ```swift
+    * count
+      ```swift
        let numbers = [1, 2, 3, 4, 5]
        numbers.count // 5
-  * first
-    ```swift
+    * first
+      ```swift
         let numbers = [1, 2, 3]
         numbers.first // 1
-  * last
-    ```swift
+    * last
+      ```swift
         let numbers = [1, 2, 3]
         numbers.last //3
-  * capacity: The number of elements that the array can store without reallocating memory.
-    ```swift
+    * capacity: The number of elements that the array can store without reallocating memory.
+      ```swift
           var numbers = [1, 2, 3]
           print(numbers.capacity) // Typically >= 3, varies by Swift implementation
-  * indices
-    ```swift
+    * indices
+      ```swift
           numbers.indices // 0..<3
-  * startIndex
-    ```swift
+    * startIndex
+      ```swift
           numbers.startIndex // 0
-  * endIndex
-    ```swift
+    * endIndex
+      ```swift
           numbers.endIndex // 3
-  * sorted
-    ```swift
+    * sorted
+      ```swift
           let sortedArray = numbers.sorted() // [1, 2, 3]
-  * reversed
-    ```swift
+    * reversed
+      ```swift
           let reversedArray = numbers.reversed() // [3, 2, 1]
-  * description  ---  A string representation of the array.
-    ```swift
+    * description  ---  A string representation of the array.
+      ```swift
           numbers.description // "[1, 2, 3]"
-  * customMirror  --- Returns a mirror reflecting the array’s structure.
-    ```swift
+    * customMirror  --- Returns a mirror reflecting the array’s structure.
+      ```swift
           numbers.customMirror //Mirror for Array
     
-  * capacity ---  total number of elements the array can hold without allocating new storage.
-    ```swift
-          numbers.capacity //  Capacity might be more than 3
+    * size -- length of array
+      ```swift
+          numbers.size // 3
+    * capacity ---  total number of elements the array can hold without allocating new storage.
+      ```swift
+          numbers.capacity //  Capacity might be more than 3 to avoid repeated reallocation of memory
     
 9. Subarray Operations
 10. Searching in Arrays
