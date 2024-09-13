@@ -1,3 +1,4 @@
+
 # Data-Structures-Algorithms-iOS
 I have listed down resources to get the full control of data structures and algorithms in iOS, which basically includes roadmap to crack Fangg companies. 
 
@@ -180,19 +181,41 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
       
     * Remove subarray
       ```swift
-      
+          var array = [1, 2, 3, 4, 5, 6, 7, 8]
+          // Remove elements from index 2 to 4 (inclusive of the start, exclusive of the end)
+          array.removeSubrange(2..<5) // Output: [1, 2, 6, 7, 8]
+
     * Split array into subarrays
       ```swift
+          let array = [1, 2, 3, 4, 5, 6, 7, 8]
+
+          // Split the array when the value is greater than 4
+          let subArrays = array.split(whereSeparator: { $0 > 4 }) // Output: [[1, 2, 3, 4], [5, 6, 7, 8]]
+
       
     * Slice an array
       ```swift
-      
+            let array = [1, 2, 3, 4, 5, 6]
+l            let slice = array[1...3] // Output: [2, 3, 4]
+
     * Reversing a Subarray
       ```swift
-      
+          var array = [1, 2, 3, 4, 5, 6]
+          let subArray = Array(array[1...4].reversed()) // Output: [5, 4, 3, 2]
+ 
     * Sorting a Subarray
       ```swift
-      
+
+        var array = [5, 3, 1, 4, 6, 2]
+
+        // Sort elements from index 1 to 4
+        array[1...4].sort() // array becomes [5, 1, 3, 4, 6, 2]
+        let array = [1, 2, 3, 4, 5, 6, 7, 8]
+
+        // Filter elements greater than 4 in the subarray
+        let filteredSubArray = array.filter { $0 > 4 } // Output: [5, 6, 7, 8]
+
+
     * Filtering a Subarray
       ```swift
       
