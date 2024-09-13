@@ -34,3 +34,56 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
 | **Graph**                  | A collection of nodes (vertices) connected by edges, representing pairwise relationships between elements.    | Representing networks such as social networks, transportation systems, or communication networks. |
 
 
+### Array Operations
+
+1. Create Array
+   * Empty Array
+       ```swift
+          var emptyArray = [Int]()
+   * Array with elements
+      ```swift
+          var nums = [1,2,3,4,5]
+3. Access Array
+    
+    _Using Index_ , _Using first and last elements__
+
+   * Using Index
+       ```swift
+          let firstElement = numbers[0] // 1
+   * First and Last Elements:
+      ```swift
+          let first = numbers.first // 1
+          let last = numbers.last   // 5
+
+4. Modify Array
+
+    _append, insert, remove, removeLast_
+    * Append
+       ```swift
+            numbers.append(6) // numbers becomes [1, 2, 3, 4, 5, 6]
+            numbers.append(contentsOf: [7,8,9]) // numbers becomes [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    * Insert
+        ```swift
+            numbers.insert(0, at: 0) // numbers becomes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    * Remove
+        ```swift
+            numbers.remove(at: 0) // numbers becomes [1, 2, 3, 4, 5, 6]
+    * Remove Last
+        ```swift
+            numbers.removeLast() // numbers becomes [1, 2, 3, 4, 5, 6, 7, 8]
+    * RemoveAll
+        ```swift
+            numbers.removeAll() // numbers becomes []
+5. Combine and Split Array
+    * Combine
+      * Concantinate
+        
+      * Append Contents Of Another Array:  
+   
+7. Sorting Arrays
+8. Checking Array Properties
+9. Subarray Operations
+10. Searching in Arrays
+11. Transformation Operations
+12. Iterating Through Arrays
+    
