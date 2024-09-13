@@ -154,6 +154,48 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
           numbers.capacity //  Capacity might be more than 3 to avoid repeated reallocation of memory
     
 9. Subarray Operations
+    * Extract subarray
+      ```swift
+          let array = [1, 2, 3, 4, 5, 6, 7, 8]
+          // Extract a subarray from index 2 to 4 (indices are inclusive of the start and exclusive of the end)
+          let subArray = Array(array[2..<5]) // Output: [3, 4, 5]
+          let subArray = Array(array[2...5]) // Output: [3, 4, 5, 6]
+
+    * Replace subarray
+      ```swift
+          var array = [1, 2, 3, 4, 5, 6]
+          let newSubArray = [10, 11, 12]
+
+          // Replace elements at index 1 to 3 with new elements
+          array[1...3] = newSubArray // Output: [1, 10, 11, 12, 5, 6]
+
+    * Insert subarray
+      ```swift
+           var array = [1, 2, 3, 6, 7]
+           let subArray = [4, 5]
+      
+           // Insert subarray at index 3
+           array.insert(contentsOf: subArray, at: 3) // Output: [1, 2, 3, 4, 5, 6, 7]
+
+      
+    * Remove subarray
+      ```swift
+      
+    * Split array into subarrays
+      ```swift
+      
+    * Slice an array
+      ```swift
+      
+    * Reversing a Subarray
+      ```swift
+      
+    * Sorting a Subarray
+      ```swift
+      
+    * Filtering a Subarray
+      ```swift
+      
 10. Searching in Arrays
 11. Transformation Operations
 12. Iterating Through Arrays
