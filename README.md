@@ -62,6 +62,7 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
        ```swift
             numbers.append(6) // numbers becomes [1, 2, 3, 4, 5, 6]
             numbers.append(contentsOf: [7,8,9]) // numbers becomes [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            numbers = numbers + [7,8,9] // numbers becomes [1, 2, 3, 4, 5, 6, 7, 8, 9]
     * Insert
         ```swift
             numbers.insert(0, at: 0) // numbers becomes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -74,13 +75,33 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
     * RemoveAll
         ```swift
             numbers.removeAll() // numbers becomes []
-5. Combine and Split Array
-    * Combine
-      * Concantinate
-        
-      * Append Contents Of Another Array:  
-   
-7. Sorting Arrays
+5. Split and Join Array
+   * Split array into halves
+     
+     _prefix , suffix_
+     
+       ```swift
+           let firstHalf = array.prefix(4)  // [1, 2, 3, 4]
+           let secondHalf = array.suffix(4) // [5, 6, 7, 8]
+   * Split array with separator
+       ```swift
+            var str = "1,2,3,4,5,6"
+            var modfiedArray = str.split(separator: ",") //modifiedArray becomes  ["1", "2", "3", "4", "5", "6"]
+   * Join array with separator
+       ```swift
+            var joinedArray = modfiedArray.joined(separator: "^") //joinedArray becomes "1^2^3^4^5^6"
+6. Sorting Arrays
+   * Sort in place
+     ```swift
+           var numbers = [1,2,5,6,3,4]
+           numbers.sort() // Ascending order: [1, 2, 3, 4, 5, 6, 7]
+   * Sort into new array
+     ```swift
+           var numbers = [1,2,5,6,3,4]
+           let sortedArray = numbers.sorted() // Returns a new sorted array
+   * Reverse array
+      ```swift
+           numbers.reverse() // [7, 6, 5, 4, 3, 2, 1]
 8. Checking Array Properties
 9. Subarray Operations
 10. Searching in Arrays
