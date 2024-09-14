@@ -217,6 +217,45 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
           let filteredSubArray = array.filter { $0 > 4 } // Output: [5, 6, 7, 8]
       
 10. Searching in Arrays
-11. Transformation Operations
-12. Iterating Through Arrays
+    _firstIndex, contains_
+    *  First Index
+
+        ```swift
+        if let index = numbers.firstIndex(of: 3) {
+        print(index) // 2
+        }
+
+     *  Contains
+
+        ```swift
+        let containsElement = numbers.contains(3) // true
+
+12. Transformation Operations
+
+    * Map : Apply a function to all elements
+      ```swift
+          var numbers = [1, 2, 3, 4, 5]
+          let doubled = numbers.map { $0 * 2 } // [2, 4, 6, 8, 10]
+
+    * Reduce : Combine elements into a single value.
+      ```swift
+            let sum = numbers.reduce(0, +) // Sum of all elements: 15
+
+    * Filter : Filter elements based on a condition
+      ```swift
+          let evens = numbers.filter { $0 % 2 == 0 } // [2, 4]
+
+14. Iterating Through Arrays
+    * For Loop
+      ```swift
+            for number in numbers {
+              print(number)
+            }
+
+    * Enumerated (Index + Element)
+      ```swift
+          for (index, value) in numbers.enumerated() {
+            print("Index: \(index), Value: \(value)")
+          }
+
     
