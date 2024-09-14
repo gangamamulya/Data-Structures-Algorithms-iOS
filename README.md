@@ -196,7 +196,7 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
     * Slice an array
       ```swift
             let array = [1, 2, 3, 4, 5, 6]
-l            let slice = array[1...3] // Output: [2, 3, 4]
+            let slice = array[1...3] // Output: [2, 3, 4]
 
     * Reversing a Subarray
       ```swift
@@ -204,20 +204,17 @@ l            let slice = array[1...3] // Output: [2, 3, 4]
           let subArray = Array(array[1...4].reversed()) // Output: [5, 4, 3, 2]
  
     * Sorting a Subarray
-      ```swift
-
-        var array = [5, 3, 1, 4, 6, 2]
-
-        // Sort elements from index 1 to 4
-        array[1...4].sort() // array becomes [5, 1, 3, 4, 6, 2]
-        let array = [1, 2, 3, 4, 5, 6, 7, 8]
-
-        // Filter elements greater than 4 in the subarray
-        let filteredSubArray = array.filter { $0 > 4 } // Output: [5, 6, 7, 8]
-
+       
+       ```swift
+           var array = [5, 3, 1, 4, 6, 2]
+           // Sort elements from index 1 to 4
+           array[1...4].sort() // array becomes [5, 1, 3, 4, 6, 2]
+           let array = [1, 2, 3, 4, 5, 6, 7, 8]
 
     * Filtering a Subarray
       ```swift
+          // Filter elements greater than 4 in the subarray
+          let filteredSubArray = array.filter { $0 > 4 } // Output: [5, 6, 7, 8]
       
 10. Searching in Arrays
 11. Transformation Operations
