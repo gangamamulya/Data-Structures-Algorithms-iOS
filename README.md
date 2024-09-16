@@ -258,4 +258,12 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
             print("Index: \(index), Value: \(value)")
           }
 
+## Practice leet code
+
+Now practice the following questions for the leetcode. 
+
+###Tiktok
+
+- Split largest Array sum(https://leetcode.com/problems/split-array-largest-sum/description/)
+- 
     
