@@ -258,6 +258,24 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
             print("Index: \(index), Value: \(value)")
           }
 
+
+ ## Searching & Sorting Algorithms
+Now that we have completed basic data structures, next step is to ace the searching and sorting algorithms.
+
+### Searching
+
+* Linear Search
+* Binary Search
+
+### Sorting
+
+* Bubble Sort
+* Insertion sort
+* Merge sort
+* Heap sort
+* Radix sort
+
+
 ## Practice leet code
 
 Now practice the following questions for the leetcode. 
