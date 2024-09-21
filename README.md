@@ -147,30 +147,27 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
           let reversedArray = numbers.reverse() // [3, 2, 1] 
 
     * reversed
-  
-     Returns new collection with reverse version of original one, but doesnt modify the original array. Used on NON MUTATING elements.
+      Returns new collection with reverse version of original one, but doesnt modify the original array. Used on NON MUTATING elements.
 
-     Note: reversed() returns a lazy ReversedCollection, which generates reversed elements only when accessed, avoiding the immediate creation of a new     
+       Note: reversed() returns a lazy ReversedCollection, which generates reversed elements only when accessed, avoiding the immediate creation of a new     
           array. This saves memory and processing time. To convert it into a full array, use Array(reversed()).
       
-      ```swift
-          let array = [1, 2, 3]
-          let reversedArray = array.reversed()  // Does not modify the original array
-          print(Array(reversedArray))           // Output: [3, 2, 1]
-
-
+        ```swift
+            let array = [1, 2, 3]
+            let reversedArray = array.reversed()  // Does not modify the original array
+            print(Array(reversedArray))           // Output: [3, 2, 1]
     * description  ---  A string representation of the array.
-      ```swift
+       ```swift
           numbers.description // "[1, 2, 3]"
-    * customMirror  --- Returns a mirror reflecting the array’s structure.
-      ```swift
+    *  customMirror  --- Returns a mirror reflecting the array’s structure.
+       ```swift
           numbers.customMirror //Mirror for Array
     
-    * size -- length of array
-      ```swift
+    *  size -- length of array
+       ```swift
           numbers.size // 3
-    * capacity ---  total number of elements the array can hold without allocating new storage.
-      ```swift
+    *  capacity ---  total number of elements the array can hold without allocating new storage.
+       ```swift
           numbers.capacity //  Capacity might be more than 3 to avoid repeated reallocation of memory
     
 10. Subarray Operations
@@ -277,6 +274,44 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
             print("Index: \(index), Value: \(value)")
           }
 
+
+ ## 1D 2D 3D Arrays
+ 
+*  1D Array (One-Dimensional Array)
+  
+   A 1D array is a simple list of elements, where each element can be accessed by a single index.
+   ```swift
+          let oneDArray = [1, 2, 3, 4, 5]
+          print(oneDArray[0]) // Output: 1
+
+
+   Structure: A single list of values.
+   Access: Use one index (e.g., oneDArray[0]).
+
+* 2D Array (Two-Dimensional Array)
+  A 2D array is essentially an array of arrays, like a table with rows and columns. You access elements by specifying two indices: one for the row and one for 
+   the column.
+
+  ```swift
+        let twoDArray = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+      ] //  print(twoDArray[0][1]) // Output: 2
+
+*  3D Array (Three-Dimensional Array)
+     A 3D array is an array of 2D arrays, like a collection of tables. You access elements by specifying three indices.
+  
+   ```swift
+     let threeDArray = [
+      [
+        [1, 2], [3, 4]
+      ],
+      [
+          [5, 6], [7, 8]
+      ]
+      ]
+    print(threeDArray[0][1][1]) // Output: 4
 
  ## Searching & Sorting Algorithms
 Now that we have completed basic data structures, next step is to ace the searching and sorting algorithms.
