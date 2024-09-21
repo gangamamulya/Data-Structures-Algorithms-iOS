@@ -336,6 +336,11 @@ Now practice the following questions for the leetcode.
 
 ###Tiktok
 
+Arrays:
+
 - Split largest Array sum(https://leetcode.com/problems/split-array-largest-sum/description/)
-- 
+
+DFS:
+
+- Number of islands (https://www.hackerrank.com/contests/crescent-practice-3rd-years/challenges/islands-1)
     
