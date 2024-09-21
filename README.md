@@ -137,9 +137,28 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
     * sorted
       ```swift
           let sortedArray = numbers.sorted() // [1, 2, 3]
-    * reversed
+    
+   Reverse vs Reversed 
+    * reverse
+       
+      Modify the array in place to reverse elements. use it for MUTATING elements, the one that is declared with var. 
+
       ```swift
-          let reversedArray = numbers.reversed() // [3, 2, 1]
+          let reversedArray = numbers.reverse() // [3, 2, 1] 
+
+    * reversed
+  
+     Returns new collection with reverse version of original one, but doesnt modify the original array. Used on NON MUTATING elements.
+
+     Note: reversed() returns a lazy ReversedCollection, which generates reversed elements only when accessed, avoiding the immediate creation of a new     
+          array. This saves memory and processing time. To convert it into a full array, use Array(reversed()).
+      
+      ```swift
+          let array = [1, 2, 3]
+          let reversedArray = array.reversed()  // Does not modify the original array
+          print(Array(reversedArray))           // Output: [3, 2, 1]
+
+
     * description  ---  A string representation of the array.
       ```swift
           numbers.description // "[1, 2, 3]"
@@ -154,7 +173,7 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
       ```swift
           numbers.capacity //  Capacity might be more than 3 to avoid repeated reallocation of memory
     
-9. Subarray Operations
+10. Subarray Operations
     * Extract subarray
       ```swift
           let array = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -216,7 +235,7 @@ This document categorizes and explains common **Linear** and **Nonlinear** data 
           // Filter elements greater than 4 in the subarray
           let filteredSubArray = array.filter { $0 > 4 } // Output: [5, 6, 7, 8]
       
-10. Searching in Arrays
+11. Searching in Arrays
     _firstIndex, contains_
     *  First Index
 
