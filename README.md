@@ -327,6 +327,11 @@ Now that we have completed basic data structures, next step is to ace the search
 * Insertion sort
 * Merge sort
 * Heap sort
+  Learn more about them here(https://medium.com/devslopes-blog/swift-data-structures-heap-e3fbbdaa3129)
+  The ones who have kodeco subscription can read from here (https://www.kodeco.com/books/data-structures-algorithms-in-swift/v3.0/chapters/22-the-heap-data-structure)
+  - Min Heap
+    
+  - Max Heap
 * Radix sort
 
 
