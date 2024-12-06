@@ -339,7 +339,7 @@ Now that we have completed basic data structures, next step is to ace the search
 
 Now practice the following questions for the leetcode. 
 
-###Tiktok
+### Tiktok
 
 Arrays:
 
@@ -348,4 +348,39 @@ Arrays:
 DFS:
 
 - Number of islands (https://www.hackerrank.com/contests/crescent-practice-3rd-years/challenges/islands-1)
+
+
+## Important techniques
+
+###Sliding Window technique
+
+  The sliding window technique is an efficient way to solve problems involving subarrays or substrings by maintaining a "window" of elements and adjusting its size dynamically as needed. This helps avoid recomputing values repeatedly, improving performance.
+
+##### Initialize Variables:
+
+Define two pointers (start and end) to represent the boundaries of the window.
+Initialize any auxiliary variables needed for the problem, such as a running sum or product, counters, or results.
+
+##### Expand the Window:
+
+Incrementally move the end pointer to include elements in the window.
+Update the state (e.g., running sum or product) based on the element at end.
+
+##### Shrink the Window (if needed):
+
+While a condition is not met (e.g., the sum or product exceeds a threshold), move the start pointer to shrink the window.
+Adjust the state (e.g., subtract the element at start) as the window shrinks.
+
+##### Process the Window:
+
+At each step, process the current window (e.g., count valid subarrays or update a result variable).
+
+##### Continue Until end Traverses the Array:
+
+Repeat steps 2–4 until end has iterated through all elements.
+
+##### Return Result:
+
+Return the final result based on the specific problem requirements.
+
     
