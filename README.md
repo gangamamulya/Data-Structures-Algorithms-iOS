@@ -352,7 +352,7 @@ DFS:
 
 ## Important techniques
 
-###Sliding Window technique
+### Sliding Window technique
 
   The sliding window technique is an efficient way to solve problems involving subarrays or substrings by maintaining a "window" of elements and adjusting its size dynamically as needed. This helps avoid recomputing values repeatedly, improving performance.
 
